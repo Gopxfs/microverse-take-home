@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :status
       t.string :email
-      t.string :created_at
+      t.date :created_at
     end
   end
 end

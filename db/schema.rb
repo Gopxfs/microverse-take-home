@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2022_12_13_222841) do
     t.string "last_name"
     t.string "status"
     t.string "email"
-    t.string "created_at"
+    t.date "created_at"
   end
 
 end
