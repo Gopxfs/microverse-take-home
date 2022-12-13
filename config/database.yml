@@ -9,12 +9,12 @@ default: &default
 development:
   <<: *default
   database: microverse_interview_database_dev
-  host: localhost
+  host: 
 
 test:
   <<: *default
   database: microverse_interview_database_test
-  host: localhost
+  host: 
 
 production:
   <<: *default
