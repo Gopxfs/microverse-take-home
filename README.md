@@ -1,24 +1,39 @@
-# README
+# Take Home Assignment
+This is my approach to Microverse's take home assignment.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## :hammer_and_wrench: Built With: 
+- Ruby on Rails 
+- SCSS 
+- SQL   
 
-Things you may want to cover:
+## Getting Started 
+- To get a local copy of this project clone this repository or download the Zip folder: 
+git clone https://github.com/Gopxfs/microverse-take-home.git 
 
-* Ruby version
+- To get started, In the root directory run: 
+gem install bundler 
 
-* System dependencies
+- Then run: 
+bundle install 
 
-* Configuration
+- Run ruby server in the Command Line: 
+rails s  
 
-* Database creation
+- Open the server page on your browser: 
+Localhost:3000 
 
-* Database initialization
+### Usage 
+To edit this project:
+- Open the repository you cloned with a code editor that you like. 
+- Edit the code as you want. 
 
-* How to run the test suite
+## :busts_in_silhouette: Authors: 
+👤 **Gabriel Fonseca** 
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-Gopxfs-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/Gopxfs) 
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-GabrielFonseca-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://www.linkedin.com/in/gabriel-fonseca-sales/)  
 
-* Services (job queues, cache servers, search engines, etc.)
+## :star2: Show your support 
+Give a :star: if you like my project! 
 
-* Deployment instructions
-
-* ...
+## :pencil: License
+This project is [MIT](https://github.com/Gopxfs/microverse-take-home/blob/dev/LICENSE) licensed. 
