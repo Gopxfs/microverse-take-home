@@ -3,6 +3,7 @@ This is my approach to Microverse's take home assignment.
 
 ## :hammer_and_wrench: Built With: 
 - Ruby on Rails 
+- Sidekiq
 - SCSS 
 - SQL   
 
