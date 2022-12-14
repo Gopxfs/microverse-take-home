@@ -1,0 +1,25 @@
+@import 'variables';
+
+table {
+  border-collapse: collapse;
+  border: 3px solid $secondary-color;
+  width: 90%;
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+table td,
+table th {
+  text-align: center;
+  padding: 15px;
+}
+
+table tr:nth-child(odd) {
+  color: $secondary-color;
+  background-color: $main-color;
+}
+
+table tr:nth-child(even) {
+  color: $main-color;
+  background-color: $secondary-color;
+}
