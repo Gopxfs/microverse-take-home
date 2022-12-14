@@ -19,5 +19,10 @@
   </table>
   <%= will_paginate @paginatedUsers %>
   <% else %>
-  <%= button_to 'Load users data', '/get_users', method: :get %>
+  <h1 class="header">Ready to get data from API</h1>
+  <div id="manage-user-data">
+    <%= button_to 'Load users data', '/get_users', method: :get, class: 'load-users' %>
+    <%= button_to 'Refresh', '/users', method: :get, class: 'load-users green' %>
+  </div>
+  <h2 class="header">Please select an option</h2>
 <% end %>
