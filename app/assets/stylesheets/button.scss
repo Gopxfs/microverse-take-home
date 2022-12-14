@@ -1,0 +1,14 @@
+@import 'variables';
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: $main-color;
+  background-color: $secondary-color;
+  padding: 15px;
+
+  &:hover {
+    color: $secondary-color;
+    background-color: $main-color;
+  }
+}
