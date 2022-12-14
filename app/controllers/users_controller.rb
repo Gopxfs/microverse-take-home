@@ -2,8 +2,10 @@ class UsersController < ApplicationController
   def index
     @users = User.limit(limit).offset(params[:offset]).where(status)
 
+    @paginatedUsers = User.paginate(page: params[:page], per_page: limit)
+
     respond_to do |format|
-      format.html { render json: @users }
+      format.html
       format.json { render json: @users }
     end
   end
