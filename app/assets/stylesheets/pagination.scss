@@ -1,0 +1,27 @@
+@import 'variables';
+
+.pagination {
+  margin: 33px 0;
+  text-align: center;
+
+  .disabled,
+  em,
+  a {
+    color: $secondary-color;
+    padding: 15px;
+    border: 1px solid $secondary-color;
+    text-decoration: none;
+  }
+
+  em,
+  .next_page,
+  .previous_page {
+    color: $main-color;
+    background-color: $secondary-color;
+  }
+
+  .disabled {
+    color: inherit;
+    background-color: inherit;
+  }
+}
