@@ -15,7 +15,8 @@ class UsersController < ApplicationController
   end
 
   def get_users
-    LoadUsersJob.perform_later
+    UsersWorker.perform_async
+    sleep(2.5)
     redirect_to root_path
   end
 
