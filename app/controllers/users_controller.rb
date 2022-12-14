@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.limit(limit).offset(params[:offset])
+    @users = User.limit(limit).offset(params[:offset]).where(status: params[:status])
 
     respond_to do |format|
       format.html
