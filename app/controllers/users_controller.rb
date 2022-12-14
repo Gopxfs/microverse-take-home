@@ -5,4 +5,9 @@ class UsersController < ApplicationController
   def show
     @name = "James"
   end
+
+  def get_users
+    LoadUsersJob.perform_later
+    redirect_to root_path
+  end
 end
