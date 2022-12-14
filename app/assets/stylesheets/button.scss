@@ -1,0 +1,33 @@
+@import 'variables';
+
+#manage-user-data {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+.load-users {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: $main-color;
+  background-color: $secondary-color;
+  padding: 15px;
+
+  &:hover {
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    background-color: $main-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.green {
+  background-color: rgb(68, 197, 56);
+  color: $secondary-color;
+  }
