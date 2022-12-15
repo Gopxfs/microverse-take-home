@@ -2,7 +2,8 @@ class UsersWorker
   include Sidekiq::Worker
 
   def perform(*)
-    getUsers('An32iK-eRu17', 0, 7)
+    api_key = Rails.application.credentials.api_key
+    getUsers(api_key, 0, 7)
   end
 
   def getUsers(key, offset, limit)
