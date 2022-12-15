@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.0'
+ruby '2.7.6'
 
 gem 'rails', '~> 5.2.3'
 gem 'pg'
@@ -18,6 +18,7 @@ gem 'dotenv'
 gem 'rest-client'
 gem 'redis'
 gem 'will_paginate'
+gem 'sidekiq-scheduler'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
