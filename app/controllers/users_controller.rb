@@ -14,12 +14,6 @@ class UsersController < ApplicationController
     @name = "James"
   end
 
-  def get_users
-    UsersWorker.perform_async
-    sleep(2.5)
-    redirect_to root_path
-  end
-
   private
 
   def limit

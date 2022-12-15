@@ -1,28 +1,19 @@
-<% unless @paginatedUsers.empty? %>
-  <table>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Status</th>
+    <th>Email</th>
+    <th>Created at</th>
+  </tr>
+  <% @paginatedUsers.each do |user|%>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Status</th>
-      <th>Email</th>
-      <th>Created at</th>
+      <td><%= user['first_name'] %></td>
+      <td><%= user['last_name'] %></td>
+      <td><%= user['status'] %></td>
+      <td><%= user['email'] %></td>
+      <td><%= user['created_at'] %></td>
     </tr>
-    <% @paginatedUsers.each do |user|%>
-      <tr>
-        <td><%= user['first_name'] %></td>
-        <td><%= user['last_name'] %></td>
-        <td><%= user['status'] %></td>
-        <td><%= user['email'] %></td>
-        <td><%= user['created_at'] %></td>
-      </tr>
-    <% end %>
-  </table>
-  <%= will_paginate @paginatedUsers %>
-  <% else %>
-  <h1 class="header">Ready to get data from API</h1>
-  <div id="manage-user-data">
-    <%= button_to 'Load users data', '/get_users', method: :get, class: 'load-users' %>
-    <%= button_to 'Refresh', '/users', method: :get, class: 'load-users green' %>
-  </div>
-  <h2 class="header">Please select an option</h2>
-<% end %>
+  <% end %>
+</table>
+<%= will_paginate @paginatedUsers %>
